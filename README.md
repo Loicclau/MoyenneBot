@@ -1,7 +1,7 @@
 
 # README - Projet Bot JavaScript pour "Mon Bureau Numérique"
 
-Ce référentiel GitHub contient un bot JavaScript qui automatise la récupération de la moyenne sur le site "Mon Bureau Numérique" et la stocke dans un fichier texte. Ce guide rapide explique comment utiliser et configurer ce bot.
+Ce Projet GitHub contient un bot JavaScript qui automatise la récupération de la moyenne sur le site "Mon Bureau Numérique" et la stocke dans un fichier texte. Ce guide rapide explique comment utiliser et configurer ce bot.
 ## Installation et Configuration préalable
 
 1. Assurez-vous d'avoir Node.js installé sur votre système.
@@ -32,7 +32,12 @@ await page.type('#password','yourPasswords');
 ```
 3. Remplacez 'yourIdentifier' par votre identifiant Mon Bureau Numérique et 'yourPasswords' par votre mot de passe.
 
-4. Enregistrez les modifications dans le fichier bot.js.
+4. Trouver la ligne suivante dans le fichier bot.js et ajouter le Nom de votre etablisement entre les apostrophes:
+```javascript
+   }, 'Nom de votre etablisement');
+```
+
+6. Enregistrez les modifications dans le fichier bot.js.
 
 # Exécution du bot
 
