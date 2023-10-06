@@ -1,10 +1,13 @@
 
 # README - Projet Bot JavaScript pour "Mon Bureau Numérique"
 
-Ce Projet GitHub contient un bot JavaScript qui automatise la récupération de la moyenne sur le site "Mon Bureau Numérique" et la stocke dans un fichier texte. Ce guide rapide explique comment utiliser et configurer ce bot.
+Ce projet GitHub contient un bot JavaScript qui automatise la récupération de la moyenne sur le site "Mon Bureau Numérique" et la stocke dans un fichier texte. Ce guide rapide explique comment utiliser et configurer ce bot.
 ## Installation et Configuration préalable
 
-1. Assurez-vous d'avoir Node.js installé sur votre système.
+1. Assurez-vous d'avoir Node.js installé sur votre système. Vous devez installer la librairie JavaScript Puppeteer. Pour ce faire, utilisez la commande npm suivante :
+```bash
+npm i puppeteer
+```
 
 2. Clonez ce référentiel sur votre machine locale en utilisant la commande suivante :
 
@@ -42,12 +45,6 @@ await page.type('#password','yourPasswords');
 # Exécution du bot
 
 -Pour exécuter le bot, vous pouvez utiliser le script batch préconfiguré. Il vous suffit de lancer le script "Moyenne.bat" présent dans le projet en double-cliquant dessus.
-
--Vous pouvez aussi exécuter le Bot javascript en utilisant la commande suivante dans un terminal : 
-
-```bash
-node bot.js > Ma-moyenne.txt 
-```
 
 Le bot se connectera à "Mon Bureau Numérique", récupérera votre moyenne générale, et la stockera dans le fichier texte nommé Ma-moyenne.txt. 
 
